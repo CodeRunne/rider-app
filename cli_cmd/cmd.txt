@@ -1,0 +1,10 @@
+
+http GET localhost:8000/api/trip/1 'Authorization: Bearer 1|poGv1Ch1n7jWPAkCU1caLfrMs1RduYVpk3wZ4cfec29f574a' 'Accept: application/json'
+
+http POST localhost:8000/api/trip 'Authorization: Bearer 1|poGv1Ch1n7jWPAkCU1caLfrMs1RduYVpk3wZ4cfec29f574a' 'Accept: application/json' destination_name=Starbucks destination='{"lat": 23.456313, "lng": 13.438824}' origin='{"lat": 45.235325, "lng": 8.328492}'
+
+http POST localhost:8000/api/driver 'Authorization: Bearer 1|poGv1Ch1n7jWPAkCU1caLfrMs1RduYVpk3wZ4cfec29f574a' 'Accept: application/json' color=White license_plate=FLA213 make=Honda model=Accord name=Micheal year=2020
+
+http POST localhost:8000/api/login/verify phone=08027449130 login_code=523602
+
+http POST localhost:8000/api/login phone=08027449130
